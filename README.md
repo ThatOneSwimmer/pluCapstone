@@ -14,10 +14,10 @@ Steps(high level):
 3)Configure GCC inside folder with following flags --target=aarch64-elf --prefix="/path" --disable-nls --enable-languages=c --without-headers
 
 4)Run commands in this order:
-make all-gcc
-make all-target-libgcc
-make install-gcc
-make install-target-libgcc
+make all-gcc \n
+make all-target-libgcc\n
+make install-gcc \n
+make install-target-libgcc \m
 
 # Using toolchain
 Need to specify into the bin folder inside where installed toolchain to access the tools, i.e. if installed in just Desktop on a linux machine would look like this
