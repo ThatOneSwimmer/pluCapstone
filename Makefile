@@ -1,4 +1,4 @@
-ARMGNU ?= aarch64-elf
+ARMGNU ?= /mnt/c/capstone/bin/aarch64-elf
 
 COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only
 ASMOPS = -Iinclude 
