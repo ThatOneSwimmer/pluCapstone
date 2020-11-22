@@ -7,11 +7,13 @@ Followed this wiki page for setup: https://wiki.osdev.org/GCC_Cross-Compiler
 Needed: Fresh download of GCC & Binutils
 
 Steps(high level):
-1)Configure binutils inside folder with following flags; --target=aarch64-elf --prefix=/path/to/where/want/install/toolchain --with-sysroot --disable-nls --disable-werror
+1)Configure binutils inside folder with following flags;  
+configure --target=aarch64-elf --prefix=/path/to/where/want/install/toolchain --with-sysroot --disable-nls --disable-werror
 
 2)Run make and make install for binutils
 
-3)Configure GCC inside folder with following flags --target=aarch64-elf --prefix="/path" --disable-nls --enable-languages=c --without-headers
+3)Configure GCC inside folder with following flags;  
+configure --target=aarch64-elf --prefix="/path" --disable-nls --enable-languages=c --without-headers
 
 4)Run commands in this order:
 make all-gcc  
