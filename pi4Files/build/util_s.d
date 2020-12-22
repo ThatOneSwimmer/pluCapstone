@@ -1,1 +1,1 @@
-build/util_s.o: /mnt/c/Capstone/pi4Files/util.S
+build/util_s.o: /mnt/c/Capstone/pluCapstone/pi4Files/util.S

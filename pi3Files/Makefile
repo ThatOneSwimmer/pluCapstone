@@ -1,16 +1,14 @@
-ARMGNU ?= /mnt/c/capstone/crossComp/bin/aarch64-elf
+ARMGNU ?= /mnt/c/Capstone/pluCapstone/crossComp/bin/aarch64-elf
 
 COPS = -Wall -nostdlib -nostartfiles -ffreestanding -Iinclude -mgeneral-regs-only
 ASMOPS = -Iinclude 
 
 BUILD_DIR = build
-SRC_DIR = /mnt/c/Capstone/pi3Files
+SRC_DIR = /mnt/c/Capstone/pluCapstone/pi3Files
 
 all : kernel8.img
 
-pi4 : pi3.kernel9.img
-
-clean :
+clean : 
 	rm -rf $(BUILD_DIR) *.img 
 
 $(BUILD_DIR)/%_c.o: $(SRC_DIR)/%.c

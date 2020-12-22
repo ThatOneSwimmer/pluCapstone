@@ -1,1 +1,1 @@
-build/memman_s.o: /mnt/c/Capstone/pi3Files/memman.S
+build/memman_s.o: /mnt/c/Capstone/pluCapstone/pi3Files/memman.S

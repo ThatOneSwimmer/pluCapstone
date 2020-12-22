@@ -1,2 +1,3 @@
-build/kernel_c.o: /mnt/c/Capstone/pi3Files/kernel.c \
- /mnt/c/Capstone/pi3Files/mini_uart.h /mnt/c/Capstone/pi3Files/base.h
+build/kernel_c.o: /mnt/c/Capstone/pluCapstone/pi3Files/kernel.c \
+ /mnt/c/Capstone/pluCapstone/pi3Files/mini_uart.h \
+ /mnt/c/Capstone/pluCapstone/pi3Files/base.h
