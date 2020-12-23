@@ -15,9 +15,11 @@
 #define AUX_MU_CNTL_REG (PBASE+0x00215060)
 #define AUX_MU_STAT_REG (PBASE+0x00215064)
 #define AUX_MU_BAUD_REG (PBASE+0x00215068)
+
 void uart_init ( void );
 char uart_recv ( void );
 void uart_send ( char c );
 void uart_send_string(char* str);
+void putc( void* p, char c);
 
 #endif

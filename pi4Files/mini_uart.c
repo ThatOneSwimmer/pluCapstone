@@ -49,7 +49,12 @@ void uart_init ( void )
 	put32(AUX_MU_IER_REG,0);                //Disable receive and transmit interrupts
 	put32(AUX_MU_LCR_REG,3);                //Enable 8 bit mode
 	put32(AUX_MU_MCR_REG,0);                //Set RTS line to be always high
-	put32(AUX_MU_BAUD_REG,541);             //Set baud rate to 115200(system_clock/(8 * (rate + 1))) default clock for pi4 is 500, default for pi3 is 250, use 270 for Qemu
+	put32(AUX_MU_BAUD_REG,541);             //Set baud rate to 115200(system_clock/(8 * (rate + 1))) default clock for pi4 is 500(541), default for pi3 is 250, use 270 for Qemu
 
 	put32(AUX_MU_CNTL_REG,3);               //Finally, enable transmitter and receiver
+}
+
+void putc ( void* p, char c)
+{
+	uart_send(c);
 }
