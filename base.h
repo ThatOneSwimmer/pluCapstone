@@ -1,6 +1,6 @@
 #ifndef	_P_BASE_H
 #define	_P_BASE_H
 
-#define PBASE 0x3F000000 //0xFE000000 if pi4
+#define PBASE 0xFE000000 //0xFE000000 if pi4, 0x3F000000 if pi3
 
 #endif  
